@@ -1,11 +1,11 @@
-baseURL: "https://demo.universtar.org"
+baseURL: "https://xmum.universtar.org"
 languageCode: "en"
-title: "Universtar"
+title: "XMUM | UniverStar"
 theme: "universtar"
 
 params:
-  heroTitle: "Universtar"
-  repoLink: "https://github.com/universtar-org/universtar"
+  heroTitle: "XMUM | UniverStar"
+  repoLink: "https://github.com/universtar-org/xmum"
   project:
     defaultDescription: "No description provided."
 
