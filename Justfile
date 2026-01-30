@@ -1,10 +1,10 @@
 dev:
   # Start the server.
-  hugo server --buildDrafts --disableFastRender
+  hugo server --config ./dev.yaml --disableFastRender
 
 gc:
   # Clean build cache.
-  rm -rf public resources
+  rm -rf public resources ./hugo_stats.json
 
 format:
   # Format code.
@@ -17,7 +17,7 @@ new path:
 update:
   # Update data.
   cd ./tools/updater && \
-  go run ./cmd/updater/main.go ../../data/projects ; \
+  go run ./cmd/updater/main.go ../../data/projects || exit 1 ; \
   cd - > /dev/null
 
 check:
