@@ -1,3 +1,4 @@
 [submodule "themes/universtar"]
 	path = themes/universtar
 	url = https://github.com/universtar-org/universtar.git
+  branch = main
