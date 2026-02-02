@@ -12,9 +12,11 @@ format:
 
 update:
   # Update data.
-  go install github.com/universtar-org/updater@latest
+  go install github.com/universtar-org/tools/cmd/updater@latest
   $(go env GOPATH)/bin/updater ./data/projects
 
 check:
   # Check YAML.
   find ./data/projects -type f \( -name '*.yml' -o -name '*.yaml' \) -exec yq '.' {} \;
+  go install github.com/universtar-org/tools/cmd/checker@latest
+  $(go env GOPATH)/bin/checker ./data/projects
