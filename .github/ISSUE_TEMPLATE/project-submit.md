@@ -2,9 +2,11 @@
 name: Project Submit
 about: Submit projects to UniverStar
 title: Project Submit
-labels: ''
+labels: Project Submit
 assignees: Fovir-GitHub
 
 ---
 
-Repository (`username/repo`)(e.g. `alice/demo`):
+List of repositories in `username/repo` format. (e.g. `alice/demo`):
+
+-
